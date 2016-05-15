@@ -1,8 +1,8 @@
 # TVify - Pro
 
-Versión ampliada del proyecto realizado en el Curso Profesional de JavaScript y
-Node.js de Platzi aplicando *features* de ECMAScript 6 y conocimientos del
-Curso de Desarrollo Web y Responsive Design también de Platzi.
+Versión ampliada del proyecto realizado en el [Curso Profesional de JavaScript, jQuery](https://platzi.com/cursos/javascript-jquery/) y
+[Node.js](https://platzi.com/cursos/nodejs/) de Platzi aplicando *features* de ECMAScript 6 y conocimientos del
+Curso de [Desarrollo Web](https://platzi.com/cursos/html5-css3/) y [Responsive Design](https://platzi.com/cursos/responsive-design/) también de Platzi.
 
 ## Propósito
 El propósito de éste proyecto no es más que el de aplicar conocimientos, mejorar

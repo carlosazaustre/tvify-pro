@@ -20,7 +20,10 @@
     "type": "git",
     "url": "https+git://github.com/carlosazaustre/tvify-pro.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "browser-sync": "^2.12.8",
