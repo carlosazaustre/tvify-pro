@@ -1,0 +1,16 @@
+{
+  "name": "tvify",
+  "version": "1.0.0",
+  "description": "Webapp to choose your favorites TV Shows",
+  "scripts": {
+    "serve": "serve src"
+  },
+  "author": "Carlos Azaustre <cazaustre@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
