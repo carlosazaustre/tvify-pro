@@ -4,7 +4,8 @@
   "description": "Webapp to choose your favorites TV Shows",
   "scripts": {
     "css": "node-sass -o ./public/css ./src/scss --output-style compressed --source-map-embed",
-    "build:css": "npm run css",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 9' -r ./public/css/*",
+    "build:css": "npm run css && npm run autoprefixer",
     "watch:css": "onchange ./src/scss/**/*.scss -- npm run build:css",
     "serve": "browser-sync start --server ./public --files ./public/*",
     "dev": "parallelshell 'npm run watch:css' 'npm run serve'",
@@ -15,13 +16,19 @@
   },
   "author": "Carlos Azaustre <cazaustre@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https+git://github.com/carlosazaustre/tvify-pro.git"
+  },
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "browser-sync": "^2.12.8",
     "node-sass": "^3.7.0",
     "nodemon": "^1.9.2",
     "onchange": "^2.4.0",
     "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.5.2",
     "sass-lint": "^1.7.0",
     "standard": "^7.0.1"
   },
