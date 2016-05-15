@@ -1,0 +1,53 @@
+.TVShowCard {
+  background: $c-bgCard;
+  border-top: 4px solid $c-bgHeader;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-image {
+    @include normalize-figure();
+    width: 35%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    width: 65%;
+  }
+
+  &-title {
+    margin: 1rem;
+  }
+
+  &-summary {
+    font-size: .8em;
+    margin: 1rem;
+    height: 7.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-info {
+    border-top: 1px solid $c-bgBody;
+    padding: .5em;
+    justify-content: space-around;
+
+    &-rating {
+      font-size: .8em;
+      
+      .fa {
+        color: $c-star;
+      }
+    }
+  }
+
+}

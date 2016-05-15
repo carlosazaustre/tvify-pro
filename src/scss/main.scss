@@ -1,10 +1,18 @@
-@import 'base/variables';
 @import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
 
 body {
   background: $c-bgBody;
   font-size: 16px;
   font-family: $font-body;
+  padding-top: 50px;
+}
+
+.AppContainer {
+  max-width: 50em;
+  padding: 1em;
 }
 
 @import 'components/header';
+@import 'components/card';

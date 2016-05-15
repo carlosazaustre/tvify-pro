@@ -1,6 +1,9 @@
 .AppHeader {
   background: $c-bgHeader;
   height: 48px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   &-title {
     color: $c-textHeader;
