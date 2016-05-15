@@ -4,6 +4,7 @@
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  margin: 0 0 1em 0;
 
   &-row {
     display: flex;
@@ -43,7 +44,7 @@
 
     &-rating {
       font-size: .8em;
-      
+
       .fa {
         color: $c-star;
       }
