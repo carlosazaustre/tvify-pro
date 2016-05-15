@@ -3,14 +3,27 @@
   "version": "1.0.0",
   "description": "Webapp to choose your favorites TV Shows",
   "scripts": {
-    "serve": "serve src"
+    "css": "node-sass -o ./public/css ./src/scss --output-style compressed --source-map-embed",
+    "build:css": "npm run css",
+    "watch:css": "onchange ./src/scss/**/*.scss -- npm run build:css",
+    "serve": "browser-sync start --server ./public --files ./public/*",
+    "dev": "parallelshell 'npm run watch:css' 'npm run serve'",
+    "lint:js": "standard './src/scripts/*'",
+    "lint:sass": "sass-lint -c ./config/.sass-lint.yml './src/scss/*' -v -q",
+    "lint": "npm run lint:js && npm run lint:sass",
+    "test": "npm run lint"
   },
   "author": "Carlos Azaustre <cazaustre@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
-
-  }
+    "browser-sync": "^2.12.8",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2",
+    "onchange": "^2.4.0",
+    "parallelshell": "^2.0.0",
+    "sass-lint": "^1.7.0",
+    "standard": "^7.0.1"
+  },
+  "sassLintConfig": "./config/.sass-lint.yml"
 }

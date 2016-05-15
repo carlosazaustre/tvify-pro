@@ -1,0 +1,10 @@
+@import 'base/variables';
+@import 'base/reset';
+
+body {
+  background: $c-bgBody;
+  font-size: 16px;
+  font-family: $font-body;
+}
+
+@import 'components/header';

@@ -10,6 +10,16 @@ y compartir con la comunidad.
 
 Es un proyecto vivo, en contínuo desarrollo.
 
+## Tecnologías
+### Back-End
+  * Entorno: **Node.js v6.1.0**
+  * Framework: **Express**
+
+### Front-End
+  * Preprocesador CSS: **Sass** y **PostCSS**
+  * Transpiler JS: **Babel**
+  * Linter JS: **Standard**
+
 ## Licencia
 **The MIT License (MIT)**
 *Copyright (c) 2016 Carlos Azaustre*

@@ -1,0 +1,12 @@
+.AppHeader {
+  background: $c-bgHeader;
+  height: 48px;
+
+  &-title {
+    color: $c-textHeader;
+    font-family: $font-title;
+    font-weight: 100;
+    text-align: center;
+    text-transform: lowercase;
+  }
+}
