@@ -22,7 +22,9 @@
   },
   "dependencies": {
     "express": "^4.13.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "node-fetch": "^1.5.2",
+    "querystring": "^0.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",

@@ -4,6 +4,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 const path = require('path')
 
+const api = require('./api')
 const app = express()
 
 // -- Config -------------------------------------------------------------------
@@ -22,6 +23,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, '..', 'public')))
 
 // -- Routes
+app.use('/api', api)
 app.get('/', (req, res) => {
   res.render('home')
 })
