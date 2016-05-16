@@ -24,6 +24,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')))
 
 // -- Routes
 app.use('/api', api)
+
 app.get('/', (req, res) => {
   res.render('home')
 })

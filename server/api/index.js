@@ -7,29 +7,33 @@ const router = express.Router()
 const tvmazeClient = tvmaze.createClient()
 
 // -- GET /api/shows
-router.get('/shows', (req, res) => {
+const getShows = (req, res) => {
   tvmazeClient
     .shows()
     .then(data => res.json(data))
     .catch(err => res.sendStatus(500).json(err))
-})
+}
 
 // -- GET /api/shows/:id
-router.get('/shows/:id', (req, res) => {
+const getShowID = (req, res) => {
   tvmazeClient
     .show(req.params.id)
     .then(data => res.json(data))
     .catch(err => res.sendStatus(500).json(err))
-})
+}
 
 // -- GET /api/search
-router.get('/search', (req, res) => {
+const search = (req, res) => {
   let query = req.query.q
 
   tvmazeClient
     .search(query)
     .then(data => res.json(data))
     .catch(err => res.sendStatus(500).json(err))
-})
+}
+
+router.get('/shows', getShows)
+router.get('/shows/:id', getShowID)
+router.get('/search', search)
 
 module.exports = router
