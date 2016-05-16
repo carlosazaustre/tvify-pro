@@ -1,1 +1,3 @@
-console.log('index.js')
+'use strict'
+
+console.log('hello its me')
