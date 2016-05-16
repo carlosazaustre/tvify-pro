@@ -1,10 +1,10 @@
 .TVShowCard {
-  background: $c-bgCard;
-  border-top: 4px solid $c-bgHeader;
+  background: $c-bg-card;
   border-radius: 3px;
+  border-top: 4px solid $c-bg-header;
   display: flex;
   flex-direction: column;
-  margin: 0 0 1em 0;
+  margin: 0 0 1em;
 
   &-row {
     display: flex;
@@ -13,8 +13,8 @@
 
   &-image {
     @include normalize-figure();
-    width: 35%;
     overflow: hidden;
+    width: 35%;
 
     img {
       width: 100%;
@@ -31,16 +31,16 @@
 
   &-summary {
     font-size: .8em;
-    margin: 1rem;
     height: 7.5em;
-    text-overflow: ellipsis;
+    margin: 1rem;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &-info {
-    border-top: 1px solid $c-bgBody;
-    padding: .5em;
+    border-top: 1px solid $c-bg-body;
     justify-content: space-around;
+    padding: .5em;
 
     &-rating {
       font-size: .8em;

@@ -3,10 +3,12 @@
 @import 'base/mixins';
 
 body {
-  background: $c-bgBody;
-  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background: $c-bg-body;
   font-family: $font-body;
+  font-size: 16px;
   padding-top: 50px;
+  text-rendering: optimizeLegibility;
 }
 
 .AppContainer {

@@ -10,7 +10,7 @@
     "serve": "browser-sync start --server ./public --files ./public/*",
     "dev": "parallelshell 'npm run watch:css' 'npm run serve'",
     "lint:js": "standard './src/scripts/*'",
-    "lint:sass": "sass-lint -c ./config/.sass-lint.yml './src/scss/*' -v -q",
+    "lint:sass": "sass-lint -c './src/scss/*' -v -q",
     "lint": "npm run lint:js && npm run lint:sass",
     "test": "npm run lint"
   },
@@ -34,6 +34,5 @@
     "postcss-cli": "^2.5.2",
     "sass-lint": "^1.7.0",
     "standard": "^7.0.1"
-  },
-  "sassLintConfig": "./config/.sass-lint.yml"
+  }
 }

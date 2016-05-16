@@ -1,12 +1,12 @@
 .AppHeader {
-  background: $c-bgHeader;
+  background: $c-bg-header;
   height: 48px;
   position: fixed;
   top: 0;
   width: 100%;
 
   &-title {
-    color: $c-textHeader;
+    color: $c-text-header;
     font-family: $font-title;
     font-weight: 100;
     text-align: center;
