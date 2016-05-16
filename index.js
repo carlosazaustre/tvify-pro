@@ -1,7 +1,6 @@
-const express = require('express')
+const app = require('./server')
 const config = require('./config')
 
-const app = express()
 const PORT = config.PORT
 
 app.listen(PORT, () => {
