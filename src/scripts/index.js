@@ -1,3 +1,11 @@
-'use strict'
+import page from 'page'
+import { getShows, searchShows } from './api-client'
+import $tvShowContainer from './tv-shows-container'
 
-console.log('hello its me')
+page('/', (ctx, next) => {
+  getShows(function(data) {
+    console.log(data)
+  })
+})
+
+page()

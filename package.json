@@ -8,7 +8,7 @@
     "build:css": "npm run css && npm run autoprefixer",
     "watch:css": "onchange ./src/scss/**/*.scss -- npm run build:css",
     "build:js": "browserify -t [ babelify --presets [ es2015 ] ] ./src/scripts/index.js -o ./public/js/main.js",
-    "watch:js": "watchify -t [ babelify --presets [ es2015 ] ] ./src/scripts/index.js -o ./public/js/main.js",
+    "watch:js": "watchify -t [ babelify --presets [ es2015 ] ] ./src/scripts/index.js -o ./public/js/main.js --debug",
     "serve": "browser-sync start --proxy 'http://localhost:3000' ./public --files ./public/*",
     "dev": "parallelshell 'nodemon index.js' 'npm run watch:css' 'npm run watch:js' 'npm run serve'",
     "lint:js": "standard './src/scripts/*'",
@@ -25,7 +25,9 @@
   "dependencies": {
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
+    "jquery": "^2.2.3",
     "node-fetch": "^1.5.2",
+    "page": "^1.7.1",
     "querystring": "^0.2.0"
   },
   "devDependencies": {
